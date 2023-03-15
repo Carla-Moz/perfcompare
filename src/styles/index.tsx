@@ -9,4 +9,3 @@ export * from './Input';
 export * from './DropDownStyles';
 export * from './SelectList';
 export * from './Switch';
-export * from './Banner';

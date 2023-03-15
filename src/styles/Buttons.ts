@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { style } from 'typestyle';
 
 import { Colors } from './Colors';
@@ -63,7 +65,7 @@ export const ButtonsDarkRaw = {
   },
   Secondary: {
     color: Colors.PrimaryTextDark,
-    backgroundColor: Colors.Background300Dark,
+    backgroundColor: Colors.SecondaryDark,
     '&:hover': {
       backgroundColor: Colors.SecondaryHoverDark,
     },

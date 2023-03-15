@@ -1,5 +1,3 @@
-import { useEffect, useState } from 'react';
-
 import Alert from '@mui/material/Alert';
 import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -9,15 +7,15 @@ import { SnackbarProvider } from 'notistack';
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
 import useProtocolTheme from '../theme/protocolTheme';
+import CompareResultsViewBeta from './CompareResults/beta/CompareResultsView';
 import CompareResultsView from './CompareResults/CompareResultsView';
-import SearchViewBeta from './Search/beta/SearchView';
-import SearchView from './Search/SearchView';
-import PerfCompareHeader from './Shared/beta/PerfCompareHeader';
+import SearchView from './Search/beta/SearchView';
 import FeedbackAlert from './Shared/FeedbackAlert';
 import SnackbarCloseButton from './Shared/SnackbarCloseButton';
+import ToggleDarkMode from './Shared/ToggleDarkModeButton';
 
 function App() {
-  const { mode, protocolTheme, toggleColorMode } = useProtocolTheme();
+  const { mode, toggleColorMode, protocolTheme } = useProtocolTheme();
   return (
     <ThemeProvider theme={protocolTheme}>
       <SnackbarProvider
@@ -36,26 +34,21 @@ function App() {
           </Link>
           .
         </Alert>
-        {/* What would we like to do with this feedback box ?*/}
-        <Box display={'none'} justifyContent='flex-end' alignItems='flex-end'>
+        <Box display='flex' justifyContent='flex-end' alignItems='flex-end'>
           <FeedbackAlert />
+          <ToggleDarkMode
+            toggleColorMode={toggleColorMode}
+            theme={protocolTheme}
+          />
         </Box>
-        <PerfCompareHeader
-          theme={protocolTheme}
-          toggleColorMode={toggleColorMode}
-        />
         <Router>
           <Routes>
             <Route path='/' element={<SearchView />} />
-            <Route path='/beta' element={<SearchViewBeta />} />
             <Route
               path='/compare-results'
               element={<CompareResultsView mode={mode} />}
             />
-            <Route
-              path='/beta/compare-results'
-              element={<CompareResultsViewBeta />}
-            />
+            <Route path='/beta/compare-results' element={<CompareResultsViewBeta />} />
           </Routes>
         </Router>
       </SnackbarProvider>
