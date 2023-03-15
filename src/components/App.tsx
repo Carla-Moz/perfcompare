@@ -6,22 +6,16 @@ import { ThemeProvider } from '@mui/material/styles';
 import { SnackbarProvider } from 'notistack';
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
-import { Strings } from '../resources/Strings';
-import { Banner } from '../styles/Banner';
 import useProtocolTheme from '../theme/protocolTheme';
+import ResultsView from './CompareResults/beta/ResultsView';
 import CompareResultsView from './CompareResults/CompareResultsView';
 import SearchViewBeta from './Search/beta/SearchView';
 import SearchView from './Search/SearchView';
 import FeedbackAlert from './Shared/FeedbackAlert';
 import SnackbarCloseButton from './Shared/SnackbarCloseButton';
 
-const strings: BannerStrings = {
-  text: Strings.components.topBanner.text,
-  linkText: Strings.components.topBanner.linkText,
-  href: Strings.components.topBanner.href,
-};
 function App() {
-  const { protocolTheme, toggleColorMode } = useProtocolTheme();
+  const { mode, toggleColorMode, protocolTheme } = useProtocolTheme();
   return (
     <ThemeProvider theme={protocolTheme}>
       <SnackbarProvider
@@ -32,54 +26,34 @@ function App() {
         )}
       >
         <CssBaseline />
-        <Alert className={Banner} severity='warning'>
-          <div className='banner-text'>
-            {strings.text} <Link href={strings.href}>{strings.linkText}</Link>
-          </div>
-          <Box display='flex' justifyContent='flex-end' alignItems='flex-end'>
-            <FeedbackAlert />
-          </Box>
+        <Alert severity='warning' sx={{ textAlign: 'center' }}>
+          This is an unstable <strong>pre-release</strong> version. Some
+          features may not yet be supported. Please file any bugs on the{' '}
+          <Link href='https://github.com/mozilla/perfcompare/issues'>
+            Github Repo
+          </Link>
+          .
         </Alert>
-
+        <Box display='flex' justifyContent='flex-end' alignItems='flex-end'>
+          <FeedbackAlert />
+        </Box>
         <Router>
           <Routes>
-            <Route
-              path='/'
-              element={
-                <SearchView
-                  toggleColorMode={toggleColorMode}
-                  protocolTheme={protocolTheme}
-                />
-              }
-            />
-            <Route
-              path='/beta'
-              element={
-                <SearchViewBeta
-                  toggleColorMode={toggleColorMode}
-                  protocolTheme={protocolTheme}
-                />
-              }
-            />
+            <Route path='/' element={<SearchView />} />
+            <Route path='/beta' element={<SearchViewBeta />} />
             <Route
               path='/compare-results'
-              element={<CompareResultsView theme={protocolTheme} />}
+              element={<CompareResultsView mode={mode} />}
             />
             <Route
               path='/beta/compare-results'
-              element={<CompareResultsView theme={protocolTheme} />}
+              element={<ResultsView />}
             />
           </Routes>
         </Router>
       </SnackbarProvider>
     </ThemeProvider>
   );
-}
-
-interface BannerStrings {
-  text: string;
-  linkText: string;
-  href: string;
 }
 
 export default App;
