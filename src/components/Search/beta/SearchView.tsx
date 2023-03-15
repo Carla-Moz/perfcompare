@@ -1,6 +1,6 @@
 import PerfCompareHeader from '../../Shared/beta/PerfCompareHeader';
 
-function SearchViewBeta() {
+function SearchView() {
   return (
     <section className='perfcompare-body'>
       <PerfCompareHeader />
@@ -8,4 +8,4 @@ function SearchViewBeta() {
   );
 }
 
-export default SearchViewBeta;
+export default SearchView;
