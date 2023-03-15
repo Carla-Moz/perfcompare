@@ -317,6 +317,15 @@ exports[`Search View should not hide search results when clicking search results
       class="MuiContainer-root MuiContainer-maxWidthLg perfcompare-body css-1tyv3cf-MuiContainer-root"
     >
       <div
+        class="header-container MuiBox-root css-0"
+      >
+        <div
+          class="MuiTypography-root MuiTypography-h1 MuiTypography-alignCenter MuiTypography-gutterBottom perfcompare-header css-8mdcpf-MuiTypography-root"
+        >
+          PerfCompare
+        </div>
+      </div>
+      <div
         class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-13eijkh-MuiGrid-root"
       />
       <div
@@ -334,20 +343,20 @@ exports[`Search View should not hide search results when clicking search results
             class="MuiFormControl-root f12tflng f17k9m91 css-1anm9we-MuiFormControl-root"
           >
             <label
-              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-8jybhx-MuiFormLabel-root-MuiInputLabel-root"
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-mru796-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="true"
               id="select-repository-label"
             >
               repository
             </label>
             <div
-              class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl fdhjf9z css-16rpij-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+              class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl fdhjf9z css-11q0f3f-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
             >
               <div
                 aria-expanded="false"
                 aria-haspopup="listbox"
                 aria-labelledby="select-repository-label"
-                class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-nhnjdr-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+                class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
                 role="button"
                 tabindex="0"
               >
@@ -361,7 +370,7 @@ exports[`Search View should not hide search results when clicking search results
               />
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-1nh6rea-MuiSvgIcon-root-MuiSelect-icon"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-1pxapms-MuiSvgIcon-root-MuiSelect-icon"
                 data-testid="ArrowDropDownIcon"
                 focusable="false"
                 viewBox="0 0 24 24"
@@ -372,7 +381,7 @@ exports[`Search View should not hide search results when clicking search results
               </svg>
               <fieldset
                 aria-hidden="true"
-                class="MuiOutlinedInput-notchedOutline css-9425fu-MuiOutlinedInput-notchedOutline"
+                class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
               >
                 <legend
                   class="css-14lo706"
@@ -395,7 +404,7 @@ exports[`Search View should not hide search results when clicking search results
               class="MuiFormControl-root MuiTextField-root f19ofdku f17k9m91 css-136h9lv-MuiFormControl-root-MuiTextField-root"
             >
               <label
-                class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-8jybhx-MuiFormLabel-root-MuiInputLabel-root"
+                class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-mru796-MuiFormLabel-root-MuiInputLabel-root"
                 data-shrink="true"
                 for="search-revision-input"
                 id="search-revision-input-label"
@@ -403,10 +412,10 @@ exports[`Search View should not hide search results when clicking search results
                 Search By Revision ID or Author Email
               </label>
               <div
-                class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-adornedStart css-134xaty-MuiInputBase-root-MuiOutlinedInput-root"
+                class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-adornedStart css-1695314-MuiInputBase-root-MuiOutlinedInput-root"
               >
                 <div
-                  class="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-zn4ba7-MuiInputAdornment-root"
+                  class="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-1laqsz7-MuiInputAdornment-root"
                 >
                   <svg
                     aria-hidden="true"
@@ -422,7 +431,7 @@ exports[`Search View should not hide search results when clicking search results
                 </div>
                 <input
                   aria-invalid="false"
-                  class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart css-1okqeeu-MuiInputBase-input-MuiOutlinedInput-input"
+                  class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input"
                   id="search-revision-input"
                   placeholder="Search By Revision ID or Author Email"
                   type="text"
@@ -430,7 +439,7 @@ exports[`Search View should not hide search results when clicking search results
                 />
                 <fieldset
                   aria-hidden="true"
-                  class="MuiOutlinedInput-notchedOutline css-9425fu-MuiOutlinedInput-notchedOutline"
+                  class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                 >
                   <legend
                     class="css-14lo706"
@@ -444,25 +453,25 @@ exports[`Search View should not hide search results when clicking search results
             </div>
           </div>
           <div
-            class="MuiBox-root css-h95ah4"
+            class="MuiBox-root css-jj0rrt"
             id="search-results-list"
           >
             <ul
               class="MuiList-root MuiList-padding css-1fc0pkb-MuiList-root"
             >
               <div
-                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters f1ht8qkz css-191fwnr-MuiButtonBase-root-MuiListItemButton-root"
+                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters f1ht8qkz css-1gopsaf-MuiButtonBase-root-MuiListItemButton-root"
                 role="button"
                 tabindex="0"
               >
                 <li
-                  class="MuiListItem-root MuiListItem-gutters search-revision-item search-revision css-fcftol-MuiListItem-root"
+                  class="MuiListItem-root MuiListItem-gutters search-revision-item search-revision css-1nxmd3h-MuiListItem-root"
                 >
                   <div
-                    class="MuiListItemIcon-root search-revision-item-icon search-revision css-96ompu-MuiListItemIcon-root"
+                    class="MuiListItemIcon-root search-revision-item-icon search-revision css-cveggr-MuiListItemIcon-root"
                   >
                     <span
-                      class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary Mui-checked PrivateSwitchBase-edgeStart MuiCheckbox-root MuiCheckbox-colorPrimary search-revision-item-checkbox css-1a7try3-MuiButtonBase-root-MuiCheckbox-root"
+                      class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary Mui-checked PrivateSwitchBase-edgeStart MuiCheckbox-root MuiCheckbox-colorPrimary search-revision-item-checkbox css-zkqepn-MuiButtonBase-root-MuiCheckbox-root"
                       data-testid="checkbox-0"
                     >
                       <input
@@ -488,10 +497,10 @@ exports[`Search View should not hide search results when clicking search results
                     class="MuiListItemText-root MuiListItemText-multiline search-revision-item-text css-konndc-MuiListItemText-root"
                   >
                     <span
-                      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap MuiListItemText-primary css-hrbm3k-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap MuiListItemText-primary css-ubpm07-MuiTypography-root"
                     >
                       <span
-                        class="MuiTypography-root MuiTypography-body2 revision-hash css-xrj7d3-MuiTypography-root"
+                        class="MuiTypography-root MuiTypography-body2 revision-hash css-1n4m7wi-MuiTypography-root"
                       >
                         coconut
                       </span>
@@ -535,7 +544,7 @@ exports[`Search View should not hide search results when clicking search results
                       </div>
                     </span>
                     <p
-                      class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiListItemText-secondary css-1d3hcrt-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiListItemText-secondary css-3a763r-MuiTypography-root"
                     >
                       you've got no arms left! 
                     </p>
@@ -555,18 +564,18 @@ exports[`Search View should not hide search results when clicking search results
                 </span>
               </div>
               <div
-                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters f1ht8qkz css-191fwnr-MuiButtonBase-root-MuiListItemButton-root"
+                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters f1ht8qkz css-1gopsaf-MuiButtonBase-root-MuiListItemButton-root"
                 role="button"
                 tabindex="0"
               >
                 <li
-                  class="MuiListItem-root MuiListItem-gutters search-revision-item search-revision css-fcftol-MuiListItem-root"
+                  class="MuiListItem-root MuiListItem-gutters search-revision-item search-revision css-1nxmd3h-MuiListItem-root"
                 >
                   <div
-                    class="MuiListItemIcon-root search-revision-item-icon search-revision css-96ompu-MuiListItemIcon-root"
+                    class="MuiListItemIcon-root search-revision-item-icon search-revision css-cveggr-MuiListItemIcon-root"
                   >
                     <span
-                      class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary Mui-checked PrivateSwitchBase-edgeStart MuiCheckbox-root MuiCheckbox-colorPrimary search-revision-item-checkbox css-1a7try3-MuiButtonBase-root-MuiCheckbox-root"
+                      class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary Mui-checked PrivateSwitchBase-edgeStart MuiCheckbox-root MuiCheckbox-colorPrimary search-revision-item-checkbox css-zkqepn-MuiButtonBase-root-MuiCheckbox-root"
                       data-testid="checkbox-1"
                     >
                       <input
@@ -592,10 +601,10 @@ exports[`Search View should not hide search results when clicking search results
                     class="MuiListItemText-root MuiListItemText-multiline search-revision-item-text css-konndc-MuiListItemText-root"
                   >
                     <span
-                      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap MuiListItemText-primary css-hrbm3k-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap MuiListItemText-primary css-ubpm07-MuiTypography-root"
                     >
                       <span
-                        class="MuiTypography-root MuiTypography-body2 revision-hash css-xrj7d3-MuiTypography-root"
+                        class="MuiTypography-root MuiTypography-body2 revision-hash css-1n4m7wi-MuiTypography-root"
                       >
                         spam
                       </span>
@@ -639,7 +648,7 @@ exports[`Search View should not hide search results when clicking search results
                       </div>
                     </span>
                     <p
-                      class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiListItemText-secondary css-1d3hcrt-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiListItemText-secondary css-3a763r-MuiTypography-root"
                     >
                       it's just a flesh wound 
                     </p>
@@ -659,18 +668,18 @@ exports[`Search View should not hide search results when clicking search results
                 </span>
               </div>
               <div
-                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters f1ht8qkz css-191fwnr-MuiButtonBase-root-MuiListItemButton-root"
+                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters f1ht8qkz css-1gopsaf-MuiButtonBase-root-MuiListItemButton-root"
                 role="button"
                 tabindex="0"
               >
                 <li
-                  class="MuiListItem-root MuiListItem-gutters search-revision-item search-revision css-fcftol-MuiListItem-root"
+                  class="MuiListItem-root MuiListItem-gutters search-revision-item search-revision css-1nxmd3h-MuiListItem-root"
                 >
                   <div
-                    class="MuiListItemIcon-root search-revision-item-icon search-revision css-96ompu-MuiListItemIcon-root"
+                    class="MuiListItemIcon-root search-revision-item-icon search-revision css-cveggr-MuiListItemIcon-root"
                   >
                     <span
-                      class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-edgeStart MuiCheckbox-root MuiCheckbox-colorPrimary search-revision-item-checkbox css-1a7try3-MuiButtonBase-root-MuiCheckbox-root"
+                      class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-edgeStart MuiCheckbox-root MuiCheckbox-colorPrimary search-revision-item-checkbox css-zkqepn-MuiButtonBase-root-MuiCheckbox-root"
                       data-testid="checkbox-2"
                     >
                       <input
@@ -696,10 +705,10 @@ exports[`Search View should not hide search results when clicking search results
                     class="MuiListItemText-root MuiListItemText-multiline search-revision-item-text css-konndc-MuiListItemText-root"
                   >
                     <span
-                      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap MuiListItemText-primary css-hrbm3k-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap MuiListItemText-primary css-ubpm07-MuiTypography-root"
                     >
                       <span
-                        class="MuiTypography-root MuiTypography-body2 revision-hash css-xrj7d3-MuiTypography-root"
+                        class="MuiTypography-root MuiTypography-body2 revision-hash css-1n4m7wi-MuiTypography-root"
                       >
                         spamspam
                       </span>
@@ -743,7 +752,7 @@ exports[`Search View should not hide search results when clicking search results
                       </div>
                     </span>
                     <p
-                      class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiListItemText-secondary css-1d3hcrt-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiListItemText-secondary css-3a763r-MuiTypography-root"
                     >
                       What, ridden on a horse? 
                     </p>
@@ -754,18 +763,18 @@ exports[`Search View should not hide search results when clicking search results
                 />
               </div>
               <div
-                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters f1ht8qkz css-191fwnr-MuiButtonBase-root-MuiListItemButton-root"
+                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters f1ht8qkz css-1gopsaf-MuiButtonBase-root-MuiListItemButton-root"
                 role="button"
                 tabindex="0"
               >
                 <li
-                  class="MuiListItem-root MuiListItem-gutters search-revision-item search-revision css-fcftol-MuiListItem-root"
+                  class="MuiListItem-root MuiListItem-gutters search-revision-item search-revision css-1nxmd3h-MuiListItem-root"
                 >
                   <div
-                    class="MuiListItemIcon-root search-revision-item-icon search-revision css-96ompu-MuiListItemIcon-root"
+                    class="MuiListItemIcon-root search-revision-item-icon search-revision css-cveggr-MuiListItemIcon-root"
                   >
                     <span
-                      class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-edgeStart MuiCheckbox-root MuiCheckbox-colorPrimary search-revision-item-checkbox css-1a7try3-MuiButtonBase-root-MuiCheckbox-root"
+                      class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-edgeStart MuiCheckbox-root MuiCheckbox-colorPrimary search-revision-item-checkbox css-zkqepn-MuiButtonBase-root-MuiCheckbox-root"
                       data-testid="checkbox-3"
                     >
                       <input
@@ -791,10 +800,10 @@ exports[`Search View should not hide search results when clicking search results
                     class="MuiListItemText-root MuiListItemText-multiline search-revision-item-text css-konndc-MuiListItemText-root"
                   >
                     <span
-                      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap MuiListItemText-primary css-hrbm3k-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap MuiListItemText-primary css-ubpm07-MuiTypography-root"
                     >
                       <span
-                        class="MuiTypography-root MuiTypography-body2 revision-hash css-xrj7d3-MuiTypography-root"
+                        class="MuiTypography-root MuiTypography-body2 revision-hash css-1n4m7wi-MuiTypography-root"
                       >
                         spamspamspam
                       </span>
@@ -838,7 +847,7 @@ exports[`Search View should not hide search results when clicking search results
                       </div>
                     </span>
                     <p
-                      class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiListItemText-secondary css-1d3hcrt-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiListItemText-secondary css-3a763r-MuiTypography-root"
                     >
                       You've got two empty 'alves of coconuts and you're bangin' 'em togetha! 
                     </p>
@@ -849,18 +858,18 @@ exports[`Search View should not hide search results when clicking search results
                 />
               </div>
               <div
-                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters f1ht8qkz css-191fwnr-MuiButtonBase-root-MuiListItemButton-root"
+                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters f1ht8qkz css-1gopsaf-MuiButtonBase-root-MuiListItemButton-root"
                 role="button"
                 tabindex="0"
               >
                 <li
-                  class="MuiListItem-root MuiListItem-gutters search-revision-item search-revision css-fcftol-MuiListItem-root"
+                  class="MuiListItem-root MuiListItem-gutters search-revision-item search-revision css-1nxmd3h-MuiListItem-root"
                 >
                   <div
-                    class="MuiListItemIcon-root search-revision-item-icon search-revision css-96ompu-MuiListItemIcon-root"
+                    class="MuiListItemIcon-root search-revision-item-icon search-revision css-cveggr-MuiListItemIcon-root"
                   >
                     <span
-                      class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-edgeStart MuiCheckbox-root MuiCheckbox-colorPrimary search-revision-item-checkbox css-1a7try3-MuiButtonBase-root-MuiCheckbox-root"
+                      class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-edgeStart MuiCheckbox-root MuiCheckbox-colorPrimary search-revision-item-checkbox css-zkqepn-MuiButtonBase-root-MuiCheckbox-root"
                       data-testid="checkbox-4"
                     >
                       <input
@@ -886,10 +895,10 @@ exports[`Search View should not hide search results when clicking search results
                     class="MuiListItemText-root MuiListItemText-multiline search-revision-item-text css-konndc-MuiListItemText-root"
                   >
                     <span
-                      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap MuiListItemText-primary css-hrbm3k-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap MuiListItemText-primary css-ubpm07-MuiTypography-root"
                     >
                       <span
-                        class="MuiTypography-root MuiTypography-body2 revision-hash css-xrj7d3-MuiTypography-root"
+                        class="MuiTypography-root MuiTypography-body2 revision-hash css-1n4m7wi-MuiTypography-root"
                       >
                         spamspamspam
                       </span>
@@ -933,7 +942,7 @@ exports[`Search View should not hide search results when clicking search results
                       </div>
                     </span>
                     <p
-                      class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiListItemText-secondary css-1d3hcrt-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiListItemText-secondary css-3a763r-MuiTypography-root"
                     >
                       It got better... 
                     </p>
@@ -947,7 +956,7 @@ exports[`Search View should not hide search results when clicking search results
           </div>
           <button
             aria-label="add revisions"
-            class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-fullWidth MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-fullWidth add-revision-button css-13laygb-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-fullWidth MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-fullWidth add-revision-button css-93ld8d-MuiButtonBase-root-MuiButton-root"
             id="add-revision-button"
             tabindex="0"
             type="button"
@@ -965,25 +974,25 @@ exports[`Search View should not hide search results when clicking search results
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1wy3zaw-MuiGrid-root"
         >
           <div
-            class="MuiBox-root css-h95ah4"
+            class="MuiBox-root css-jj0rrt"
             id="search-results-list"
           >
             <ul
               class="MuiList-root MuiList-padding css-1fc0pkb-MuiList-root"
             >
               <div
-                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters f1ht8qkz css-191fwnr-MuiButtonBase-root-MuiListItemButton-root"
+                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters f1ht8qkz css-1gopsaf-MuiButtonBase-root-MuiListItemButton-root"
                 role="button"
                 tabindex="0"
               >
                 <li
-                  class="MuiListItem-root MuiListItem-gutters search-revision-item search-revision css-fcftol-MuiListItem-root"
+                  class="MuiListItem-root MuiListItem-gutters search-revision-item search-revision css-1nxmd3h-MuiListItem-root"
                 >
                   <div
-                    class="MuiListItemIcon-root search-revision-item-icon search-revision css-96ompu-MuiListItemIcon-root"
+                    class="MuiListItemIcon-root search-revision-item-icon search-revision css-cveggr-MuiListItemIcon-root"
                   >
                     <span
-                      class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary Mui-checked PrivateSwitchBase-edgeStart MuiCheckbox-root MuiCheckbox-colorPrimary search-revision-item-checkbox css-1a7try3-MuiButtonBase-root-MuiCheckbox-root"
+                      class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary Mui-checked PrivateSwitchBase-edgeStart MuiCheckbox-root MuiCheckbox-colorPrimary search-revision-item-checkbox css-zkqepn-MuiButtonBase-root-MuiCheckbox-root"
                       data-testid="checkbox-0"
                     >
                       <input
@@ -1009,10 +1018,10 @@ exports[`Search View should not hide search results when clicking search results
                     class="MuiListItemText-root MuiListItemText-multiline search-revision-item-text css-konndc-MuiListItemText-root"
                   >
                     <span
-                      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap MuiListItemText-primary css-hrbm3k-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap MuiListItemText-primary css-ubpm07-MuiTypography-root"
                     >
                       <span
-                        class="MuiTypography-root MuiTypography-body2 revision-hash css-xrj7d3-MuiTypography-root"
+                        class="MuiTypography-root MuiTypography-body2 revision-hash css-1n4m7wi-MuiTypography-root"
                       >
                         coconut
                       </span>
@@ -1056,7 +1065,7 @@ exports[`Search View should not hide search results when clicking search results
                       </div>
                     </span>
                     <p
-                      class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiListItemText-secondary css-1d3hcrt-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiListItemText-secondary css-3a763r-MuiTypography-root"
                     >
                       you've got no arms left! 
                     </p>
@@ -1067,18 +1076,18 @@ exports[`Search View should not hide search results when clicking search results
                 />
               </div>
               <div
-                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters f1ht8qkz css-191fwnr-MuiButtonBase-root-MuiListItemButton-root"
+                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters f1ht8qkz css-1gopsaf-MuiButtonBase-root-MuiListItemButton-root"
                 role="button"
                 tabindex="0"
               >
                 <li
-                  class="MuiListItem-root MuiListItem-gutters search-revision-item search-revision css-fcftol-MuiListItem-root"
+                  class="MuiListItem-root MuiListItem-gutters search-revision-item search-revision css-1nxmd3h-MuiListItem-root"
                 >
                   <div
-                    class="MuiListItemIcon-root search-revision-item-icon search-revision css-96ompu-MuiListItemIcon-root"
+                    class="MuiListItemIcon-root search-revision-item-icon search-revision css-cveggr-MuiListItemIcon-root"
                   >
                     <span
-                      class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary Mui-checked PrivateSwitchBase-edgeStart MuiCheckbox-root MuiCheckbox-colorPrimary search-revision-item-checkbox css-1a7try3-MuiButtonBase-root-MuiCheckbox-root"
+                      class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary Mui-checked PrivateSwitchBase-edgeStart MuiCheckbox-root MuiCheckbox-colorPrimary search-revision-item-checkbox css-zkqepn-MuiButtonBase-root-MuiCheckbox-root"
                       data-testid="checkbox-1"
                     >
                       <input
@@ -1104,10 +1113,10 @@ exports[`Search View should not hide search results when clicking search results
                     class="MuiListItemText-root MuiListItemText-multiline search-revision-item-text css-konndc-MuiListItemText-root"
                   >
                     <span
-                      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap MuiListItemText-primary css-hrbm3k-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap MuiListItemText-primary css-ubpm07-MuiTypography-root"
                     >
                       <span
-                        class="MuiTypography-root MuiTypography-body2 revision-hash css-xrj7d3-MuiTypography-root"
+                        class="MuiTypography-root MuiTypography-body2 revision-hash css-1n4m7wi-MuiTypography-root"
                       >
                         spam
                       </span>
@@ -1151,7 +1160,7 @@ exports[`Search View should not hide search results when clicking search results
                       </div>
                     </span>
                     <p
-                      class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiListItemText-secondary css-1d3hcrt-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiListItemText-secondary css-3a763r-MuiTypography-root"
                     >
                       it's just a flesh wound 
                     </p>
@@ -1162,18 +1171,18 @@ exports[`Search View should not hide search results when clicking search results
                 />
               </div>
               <div
-                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters f1ht8qkz css-191fwnr-MuiButtonBase-root-MuiListItemButton-root"
+                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters f1ht8qkz css-1gopsaf-MuiButtonBase-root-MuiListItemButton-root"
                 role="button"
                 tabindex="0"
               >
                 <li
-                  class="MuiListItem-root MuiListItem-gutters search-revision-item search-revision css-fcftol-MuiListItem-root"
+                  class="MuiListItem-root MuiListItem-gutters search-revision-item search-revision css-1nxmd3h-MuiListItem-root"
                 >
                   <div
-                    class="MuiListItemIcon-root search-revision-item-icon search-revision css-96ompu-MuiListItemIcon-root"
+                    class="MuiListItemIcon-root search-revision-item-icon search-revision css-cveggr-MuiListItemIcon-root"
                   >
                     <span
-                      class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-edgeStart MuiCheckbox-root MuiCheckbox-colorPrimary search-revision-item-checkbox css-1a7try3-MuiButtonBase-root-MuiCheckbox-root"
+                      class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-edgeStart MuiCheckbox-root MuiCheckbox-colorPrimary search-revision-item-checkbox css-zkqepn-MuiButtonBase-root-MuiCheckbox-root"
                       data-testid="checkbox-2"
                     >
                       <input
@@ -1199,10 +1208,10 @@ exports[`Search View should not hide search results when clicking search results
                     class="MuiListItemText-root MuiListItemText-multiline search-revision-item-text css-konndc-MuiListItemText-root"
                   >
                     <span
-                      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap MuiListItemText-primary css-hrbm3k-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap MuiListItemText-primary css-ubpm07-MuiTypography-root"
                     >
                       <span
-                        class="MuiTypography-root MuiTypography-body2 revision-hash css-xrj7d3-MuiTypography-root"
+                        class="MuiTypography-root MuiTypography-body2 revision-hash css-1n4m7wi-MuiTypography-root"
                       >
                         spamspam
                       </span>
@@ -1246,7 +1255,7 @@ exports[`Search View should not hide search results when clicking search results
                       </div>
                     </span>
                     <p
-                      class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiListItemText-secondary css-1d3hcrt-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiListItemText-secondary css-3a763r-MuiTypography-root"
                     >
                       What, ridden on a horse? 
                     </p>
@@ -1257,18 +1266,18 @@ exports[`Search View should not hide search results when clicking search results
                 />
               </div>
               <div
-                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters f1ht8qkz css-191fwnr-MuiButtonBase-root-MuiListItemButton-root"
+                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters f1ht8qkz css-1gopsaf-MuiButtonBase-root-MuiListItemButton-root"
                 role="button"
                 tabindex="0"
               >
                 <li
-                  class="MuiListItem-root MuiListItem-gutters search-revision-item search-revision css-fcftol-MuiListItem-root"
+                  class="MuiListItem-root MuiListItem-gutters search-revision-item search-revision css-1nxmd3h-MuiListItem-root"
                 >
                   <div
-                    class="MuiListItemIcon-root search-revision-item-icon search-revision css-96ompu-MuiListItemIcon-root"
+                    class="MuiListItemIcon-root search-revision-item-icon search-revision css-cveggr-MuiListItemIcon-root"
                   >
                     <span
-                      class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-edgeStart MuiCheckbox-root MuiCheckbox-colorPrimary search-revision-item-checkbox css-1a7try3-MuiButtonBase-root-MuiCheckbox-root"
+                      class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-edgeStart MuiCheckbox-root MuiCheckbox-colorPrimary search-revision-item-checkbox css-zkqepn-MuiButtonBase-root-MuiCheckbox-root"
                       data-testid="checkbox-3"
                     >
                       <input
@@ -1294,10 +1303,10 @@ exports[`Search View should not hide search results when clicking search results
                     class="MuiListItemText-root MuiListItemText-multiline search-revision-item-text css-konndc-MuiListItemText-root"
                   >
                     <span
-                      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap MuiListItemText-primary css-hrbm3k-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap MuiListItemText-primary css-ubpm07-MuiTypography-root"
                     >
                       <span
-                        class="MuiTypography-root MuiTypography-body2 revision-hash css-xrj7d3-MuiTypography-root"
+                        class="MuiTypography-root MuiTypography-body2 revision-hash css-1n4m7wi-MuiTypography-root"
                       >
                         spamspamspam
                       </span>
@@ -1341,7 +1350,7 @@ exports[`Search View should not hide search results when clicking search results
                       </div>
                     </span>
                     <p
-                      class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiListItemText-secondary css-1d3hcrt-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiListItemText-secondary css-3a763r-MuiTypography-root"
                     >
                       You've got two empty 'alves of coconuts and you're bangin' 'em togetha! 
                     </p>
@@ -1352,18 +1361,18 @@ exports[`Search View should not hide search results when clicking search results
                 />
               </div>
               <div
-                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters f1ht8qkz css-191fwnr-MuiButtonBase-root-MuiListItemButton-root"
+                class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters f1ht8qkz css-1gopsaf-MuiButtonBase-root-MuiListItemButton-root"
                 role="button"
                 tabindex="0"
               >
                 <li
-                  class="MuiListItem-root MuiListItem-gutters search-revision-item search-revision css-fcftol-MuiListItem-root"
+                  class="MuiListItem-root MuiListItem-gutters search-revision-item search-revision css-1nxmd3h-MuiListItem-root"
                 >
                   <div
-                    class="MuiListItemIcon-root search-revision-item-icon search-revision css-96ompu-MuiListItemIcon-root"
+                    class="MuiListItemIcon-root search-revision-item-icon search-revision css-cveggr-MuiListItemIcon-root"
                   >
                     <span
-                      class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-edgeStart MuiCheckbox-root MuiCheckbox-colorPrimary search-revision-item-checkbox css-1a7try3-MuiButtonBase-root-MuiCheckbox-root"
+                      class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-edgeStart MuiCheckbox-root MuiCheckbox-colorPrimary search-revision-item-checkbox css-zkqepn-MuiButtonBase-root-MuiCheckbox-root"
                       data-testid="checkbox-4"
                     >
                       <input
@@ -1389,10 +1398,10 @@ exports[`Search View should not hide search results when clicking search results
                     class="MuiListItemText-root MuiListItemText-multiline search-revision-item-text css-konndc-MuiListItemText-root"
                   >
                     <span
-                      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap MuiListItemText-primary css-hrbm3k-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap MuiListItemText-primary css-ubpm07-MuiTypography-root"
                     >
                       <span
-                        class="MuiTypography-root MuiTypography-body2 revision-hash css-xrj7d3-MuiTypography-root"
+                        class="MuiTypography-root MuiTypography-body2 revision-hash css-1n4m7wi-MuiTypography-root"
                       >
                         spamspamspam
                       </span>
@@ -1436,7 +1445,7 @@ exports[`Search View should not hide search results when clicking search results
                       </div>
                     </span>
                     <p
-                      class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiListItemText-secondary css-1d3hcrt-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiListItemText-secondary css-3a763r-MuiTypography-root"
                     >
                       It got better... 
                     </p>
