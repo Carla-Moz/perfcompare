@@ -60,8 +60,8 @@ const getDesignTokens = (modeVal: 'light' | 'dark') => ({
 });
 
 const useProtocolTheme = () => {
-  const storedMode = localStorage.getItem('theme') || 'light';
-  const [mode, setMode] = useState((storedMode as 'light' | 'dark') || 'light');
+  const storedMode = localStorage.getItem('theme');
+  const [mode, setMode] = useState(storedMode as 'light' | 'dark');
 
   useEffect(() => {
     localStorage.setItem('theme', mode);

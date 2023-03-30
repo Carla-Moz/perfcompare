@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { FormControlLabel, FormGroup } from '@mui/material';
+import { FormControlLabel, FormGroup, Theme } from '@mui/material';
 import Box from '@mui/material/Box';
 import Switch from '@mui/material/Switch';
 import { style } from 'typestyle';
@@ -13,13 +13,13 @@ const label = { inputProps: { 'aria-label': 'Dark mode switch' } };
 
 function ToggleDarkMode(props: ToggleDarkModeProps) {
   const { toggleColorMode, theme } = props;
-
-  const [light, setLight] = useState(SwitchRaw(theme));
+  const themeMode = theme.palette.mode;
+  const [light, setLight] = useState(SwitchRaw(themeMode as 'light' | 'dark'));
 
   useEffect(() => {
-    const updatedMode = theme === 'light' ? 'light' : 'dark';
+    const updatedMode = themeMode === 'light' ? 'light' : 'dark';
     setLight(SwitchRaw(updatedMode));
-  }, [theme]);
+  }, [themeMode]);
 
   const styles = {
     box: style({
@@ -29,7 +29,7 @@ function ToggleDarkMode(props: ToggleDarkModeProps) {
       margin: 0,
       $nest: {
         '.toggle-text': {
-          ...(theme === 'light'
+          ...(themeMode === 'light'
             ? FontsRaw.BodyDefault
             : FontsRaw.BodyDefaultDark),
           margin: 0,
@@ -50,22 +50,21 @@ function ToggleDarkMode(props: ToggleDarkModeProps) {
           labelPlacement='start'
           control={
             <Switch
-              checked={theme == 'dark' ?? true}
+              checked={themeMode == 'dark' ?? true}
               onChange={toggleColorMode}
               className='toggle-switch toggle-dark-mode'
-              name='toggle-dark-mode'
               {...label}
-              id={theme == 'light' ? strings.darkMode : strings.lightMode}
+              id={themeMode == 'light' ? strings.darkMode : strings.lightMode}
             />
           }
-          label={theme == 'light' ? strings.darkMode : strings.lightMode}
+          label={themeMode == 'light' ? strings.darkMode : strings.lightMode}
         />
       </FormGroup>
     </Box>
   );
 }
 interface ToggleDarkModeProps {
-  theme: 'light' | 'dark';
+  theme: Theme;
   toggleColorMode: () => void;
 }
 

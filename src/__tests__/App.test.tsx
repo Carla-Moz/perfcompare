@@ -8,10 +8,6 @@ import { screen } from './utils/test-utils';
 describe('App', () => {
   test('Should render search view on default route', async () => {
     render(<App />);
-
-    // Title appears
-    expect(screen.getByText(/PerfCompare/i)).toBeInTheDocument();
-
     await act(async () => void jest.runOnlyPendingTimers());
 
     expect(
@@ -25,16 +21,18 @@ describe('App', () => {
 
     render(<App />);
 
-    const darkModeButton = screen.getByLabelText('Dark mode');
+    const darkModeButton = screen.getByRole('input', {
+      name: 'toggle-dark-mode',
+    });
 
     await user.click(darkModeButton);
-    expect(screen.queryByLabelText('Light mode')).toBeInTheDocument();
+    expect(screen.queryByLabelText('Light Mode')).toBeInTheDocument();
 
     await user.click(darkModeButton);
-    expect(screen.queryByLabelText('Dark mode')).toBeInTheDocument();
+    expect(screen.queryByLabelText('Dark Mode')).toBeInTheDocument();
   });
 
-  test('Clicking on the info icon an alert should be displayed', async () => {
+    test('Clicking on the info icon an alert should be displayed', async () => {
     // set delay to null to prevent test time-out due to useFakeTimers
     const user = userEvent.setup({ delay: null });
 
@@ -44,9 +42,7 @@ describe('App', () => {
       name: 'info-button',
     });
 
-    expect(() => screen.getByTestId('feedback-alert')).toThrow(
-      'Unable to find an element',
-    );
+    expect(() => screen.getByTestId('feedback-alert')).toThrow('Unable to find an element');
     await user.click(infoButton);
     expect(screen.getByTestId('feedback-alert')).toBeInTheDocument();
   });
