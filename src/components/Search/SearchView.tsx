@@ -1,5 +1,4 @@
 import ArrowForward from '@mui/icons-material/ArrowForward';
-import type { Theme } from '@mui/material';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
@@ -12,7 +11,6 @@ import type { RootState } from '../../common/store';
 import useFilterCompareResults from '../../hooks/useFilterCompareResults';
 import { Strings } from '../../resources/Strings';
 import { Revision } from '../../types/state';
-import PerfCompareHeader from '../Shared/beta/PerfCompareHeader';
 import RevisionSearch from '../Shared/RevisionSearch';
 import SelectedRevisionsTable from '../Shared/SelectedRevisionsTable';
 import SearchViewInit from './SearchViewInit';
@@ -24,8 +22,6 @@ function SearchView(props: SearchViewProps) {
   const { clearFilters } = useFilterCompareResults();
   const { enqueueSnackbar } = useSnackbar();
   const warningVariant: VariantType = 'warning';
-  const { toggleColorMode, protocolTheme } = props;
-  const themeMode = protocolTheme.palette.mode;
 
   const goToCompareResultsPage = (selectedRevisions: Revision[]) => {
     // TODO: remove this check once comparing without a base
@@ -48,43 +44,34 @@ function SearchView(props: SearchViewProps) {
   const { selectedRevisions } = props;
 
   return (
-    <>
-      <PerfCompareHeader
-        toggleColorMode={toggleColorMode}
-        themeMode={themeMode}
-      />
-      <Container className='perfcompare-body' maxWidth='lg'>
-        {/* Component to fetch recent revisions on mount */}
-
-        <SearchViewInit />
-        <Grid item xs={12}>
-          {selectedRevisions.length > 0 && (
-            <SelectedRevisionsTable view='search' />
-          )}
-        </Grid>
-        <Grid item className='compare-button-section'>
-          {selectedRevisions.length > 0 && (
-            <Button
-              className='compare-button'
-              variant='contained'
-              onClick={() => goToCompareResultsPage(selectedRevisions)}
-            >
-              {strings.button}
-              <ArrowForward className='compare-icon' />
-            </Button>
-          )}
-        </Grid>
-        <RevisionSearch view='search' />
-      </Container>
-    </>
+    <Container className='perfcompare-body' maxWidth='lg'>
+      {/* Component to fetch recent revisions on mount */}
+      <SearchViewInit />
+      <Grid item xs={12}>
+        {selectedRevisions.length > 0 && (
+          <SelectedRevisionsTable view='search' />
+        )}
+      </Grid>
+      <Grid item className='compare-button-section'>
+        {selectedRevisions.length > 0 && (
+          <Button
+            className='compare-button'
+            variant='contained'
+            onClick={() => goToCompareResultsPage(selectedRevisions)}
+          >
+            {strings.button}
+            <ArrowForward className='compare-icon' />
+          </Button>
+        )}
+      </Grid>
+      <RevisionSearch view='search' />
+    </Container>
   );
 }
 
 interface SearchViewProps {
   searchResults: Revision[];
   selectedRevisions: Revision[];
-  toggleColorMode: () => void;
-  protocolTheme: Theme;
 }
 
 function mapStateToProps(state: RootState) {
