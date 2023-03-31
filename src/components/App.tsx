@@ -7,7 +7,6 @@ import { SnackbarProvider } from 'notistack';
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
 import useProtocolTheme from '../theme/protocolTheme';
-import CompareResultsViewBeta from './CompareResults/beta/CompareResultsView';
 import CompareResultsView from './CompareResults/CompareResultsView';
 import SearchViewBeta from './Search/beta/SearchView';
 import SearchView from './Search/SearchView';
@@ -16,13 +15,7 @@ import FeedbackAlert from './Shared/FeedbackAlert';
 import SnackbarCloseButton from './Shared/SnackbarCloseButton';
 
 function App() {
-  const { mode, protocolTheme, toggleColorMode } = useProtocolTheme();
-  const [isBeta, setBeta] = useState(false);
-
-  useEffect(() => {
-    const checkUrl = window.location.hash.includes('beta') ?? true;
-    setBeta(checkUrl);
-  }, [isBeta]);
+  const { protocolTheme, toggleColorMode } = useProtocolTheme();
   return (
     <ThemeProvider theme={protocolTheme}>
       <SnackbarProvider
@@ -42,7 +35,7 @@ function App() {
           .
         </Alert>
         {/* What would we like to do with this feedback box ?*/}
-        <Box display={'none'} justifyContent='flex-end' alignItems='flex-end'>
+        <Box display='flex' justifyContent='flex-end' alignItems='flex-end'>
           <FeedbackAlert />
         </Box>
         <PerfCompareHeader
@@ -55,11 +48,11 @@ function App() {
             <Route path='/beta' element={<SearchViewBeta />} />
             <Route
               path='/compare-results'
-              element={<CompareResultsView mode={mode} />}
+              element={<CompareResultsView theme={protocolTheme} />}
             />
             <Route
               path='/beta/compare-results'
-              element={<CompareResultsView mode={mode} />}
+              element={<CompareResultsView theme={protocolTheme} />}
             />
           </Routes>
         </Router>

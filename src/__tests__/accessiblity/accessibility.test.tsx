@@ -1,4 +1,3 @@
-import { renderHook } from '@testing-library/react';
 import { axe, toHaveNoViolations } from 'jest-axe';
 import { act } from 'react-dom/test-utils';
 
@@ -9,17 +8,14 @@ import SearchView from '../../components/Search/SearchView';
 import SelectedRevisionsTable from '../../components/Shared/SelectedRevisionsTable';
 import { updateSearchResults } from '../../reducers/SearchSlice';
 import { setSelectedRevisions } from '../../reducers/SelectedRevisions';
-import useProtocolTheme from '../../theme/protocolTheme';
+import useProtocolTheme from '../../theme/ProtocolTheme';
 import getTestData from '../utils/fixtures';
 import { renderWithRouter, store } from '../utils/setupTests';
 
 expect.extend(toHaveNoViolations);
 
 describe('Accessibility', () => {
-  const protocolTheme = renderHook(() => useProtocolTheme()).result.current
-    .protocolTheme;
-  const toggleColorMode = renderHook(() => useProtocolTheme()).result.current
-    .toggleColorMode;
+  const { protocolTheme } = useProtocolTheme();
 
   beforeEach(() => {
     jest.useRealTimers();
@@ -31,12 +27,7 @@ describe('Accessibility', () => {
 
   it('SearchInput should have no violations', async () => {
     await act(async () => {
-      const { container } = renderWithRouter(
-        <SearchView
-          toggleColorMode={toggleColorMode}
-          protocolTheme={protocolTheme}
-        />,
-      );
+      const { container } = renderWithRouter(<SearchView />);
       const results = await axe(container);
       expect(results).toHaveNoViolations();
     });
