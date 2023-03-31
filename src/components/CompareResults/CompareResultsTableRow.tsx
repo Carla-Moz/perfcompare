@@ -79,7 +79,7 @@ function CompareResultsTableRow(props: ResultsTableRowProps) {
 interface ResultsTableRowProps {
   result: CompareResultsItem;
   index: number;
-  theme: 'light' | 'dark';
+  theme: string;
 }
 
 export default CompareResultsTableRow;

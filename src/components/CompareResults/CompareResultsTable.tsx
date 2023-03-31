@@ -30,16 +30,16 @@ function CompareResultsTable(props: CompareResultsProps) {
               aria-label='a dense table'
             >
               <colgroup>
-                <col style={{ width: '10%' }} />
-                <col style={{ width: '10%' }} />
-                <col style={{ width: '20%' }} />
-                <col style={{ width: '10%' }} />
-                <col style={{ width: '10%' }} />
-                <col style={{ width: '10%' }} />
-                <col style={{ width: '10%' }} />
-                <col style={{ width: '12%' }} />
-                <col style={{ width: '8%' }} />
-              </colgroup>
+      <col style={{ width:'10%' }}/>
+      <col style={{ width:'10%' }}/>
+      <col style={{ width:'20%' }}/>
+      <col style={{ width:'10%' }}/>
+      <col style={{ width:'10%' }}/>
+      <col style={{ width:'10%' }}/>
+      <col style={{ width:'10%' }}/>
+      <col style={{ width:'12%' }}/>
+      <col style={{ width:'8%' }}/>
+   </colgroup>
               <PaginatedCompareResults theme={theme} />
             </Table>
           </TableContainer>
@@ -66,7 +66,7 @@ function CompareResultsTable(props: CompareResultsProps) {
 }
 
 interface CompareResultsProps {
-  theme: 'light' | 'dark';
+  theme: string;
 }
 
 export default CompareResultsTable;
