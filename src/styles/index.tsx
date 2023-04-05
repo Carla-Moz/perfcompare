@@ -10,4 +10,3 @@ export * from './DropDownStyles';
 export * from './SelectList';
 export * from './Switch';
 export * from './Banner';
-export * from './Document';
