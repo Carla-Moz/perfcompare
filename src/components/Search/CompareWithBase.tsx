@@ -112,7 +112,6 @@ function CompareWithBase({
 
   const onFormSubmit = (e: React.FormEvent) => {
     const isFormReadyToBeSubmitted = baseInProgressRev !== null;
-    setFormIsDisplayed(!isFormReadyToBeSubmitted);
 
     if (!isFormReadyToBeSubmitted) {
       e.preventDefault();
@@ -253,6 +252,7 @@ function CompareWithBase({
           className='form-wrapper'
           onSubmit={onFormSubmit}
           aria-label='Compare with base form'
+          reloadDocument={hasEditButton ?? true}
         >
           {/**** Edit Button ****/}
           <div
@@ -312,7 +312,7 @@ function CompareWithBase({
             {hasEditButton && (
               <input
                 type='hidden'
-                value={frameworkFromURL?.toString()}
+                value={frameworkIdVal}
                 name='framework'
               ></input>
             )}
